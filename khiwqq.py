@@ -1,1 +1,1 @@
-adfa
+print("KHIWQQ")
