@@ -14,27 +14,27 @@ X=data[['mpg','wt']]
 Y=data.iloc[:,0]
 
 #find kmeans
-# wcss=[]
-# for i in range(1,11):
-#     kmeans= KMeans(n_clusters=i, init='k-means++', random_state=1)
-#     kmeans.fit(X)
-#     wcss.append(kmeans.inertia_)
+wcss=[]
+for i in range(1,11):
+    kmeans= KMeans(n_clusters=i, init='k-means++', random_state=1)
+    kmeans.fit(X)
+    wcss.append(kmeans.inertia_)
 
-# #graph1
-# plt.plot(range(1,11), wcss, linestyle='--', marker='o', label='WCSS value')
-# plt.title('WCSS value- Elbow method')
-# plt.xlabel('no of clusters- K value')
-# plt.ylabel('Wcss value')
-# plt.legend()
-# plt.show()
+#graph1
+plt.plot(range(1,11), wcss, linestyle='--', marker='o', label='WCSS value')
+plt.title('WCSS value- Elbow method')
+plt.xlabel('no of clusters- K value')
+plt.ylabel('Wcss value')
+plt.legend()
+plt.show()
 
+
+#graph2
 #define kmeans
 kmeans= KMeans(n_clusters=3, random_state=1)
 kmeans.fit(X)
-
 pred_Y = kmeans.predict(X)
 print(pred_Y)
-
 #Cluster Center
 print(kmeans.cluster_centers_)
 
