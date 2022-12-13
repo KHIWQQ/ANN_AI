@@ -1,14 +1,13 @@
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import pandas as pd
-import matplotlib.pyplot as plt
 
 data = pd.read_csv('mtcars.csv')
 X=data[['mpg','wt']]
 
 wcss=[]
 for i in range(1,11):
-    kmeans= KMeans(n_clusters=i, init='k-means++', random_state=1)
+    kmeans = KMeans(n_clusters=i, init='k-means++', random_state=1)
     kmeans.fit(X)
     wcss.append(kmeans.inertia_)
 
