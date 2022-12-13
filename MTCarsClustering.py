@@ -1,17 +1,13 @@
 
 import matplotlib.pyplot as plt
-from sklearn.datasets._samples_generator import make_blobs
 from sklearn.cluster import KMeans
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import LabelEncoder
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.cluster import KMeans
+
 data = pd.read_csv('mtcars.csv')
 
 X=data[['mpg','wt']]
-Y=data.iloc[:,0]
+
 
 #find kmeans
 wcss=[]
@@ -34,12 +30,10 @@ plt.show()
 kmeans= KMeans(n_clusters=3, random_state=1)
 kmeans.fit(X)
 pred_Y = kmeans.predict(X)
-print(pred_Y)
-#Cluster Center
-print(kmeans.cluster_centers_)
+
 
 data['cluster']=kmeans.predict(X)
-print(data.sort_values(by='cluster'))
+
 
 # plotting Cluster plot
 plt.scatter(data.loc[data['cluster']==0]['mpg'], data.loc[data['cluster']==0]['wt'], marker="*", label='cluster1-0')
