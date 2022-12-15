@@ -11,7 +11,7 @@ http://192.168.222.140/wordpress/wp-login.php
 18. 21,80,443,3306
 19.
 20.
-21.
+21.username : shadow password : MwM&NSH(netH&AK1bki1BMon
 22.
 23.
 24.
