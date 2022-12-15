@@ -1,5 +1,6 @@
 เท่าที่ดู path มันมี wordpress ว่ะ
-
+ลองดู /wordpress/readme.html
+ข้างล่างๆมันจะมี base64 แปลกๆ
 15. xxamp ป้ะวะ
 16.
 17. 4 port
