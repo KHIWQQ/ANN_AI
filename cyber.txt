@@ -2,8 +2,9 @@
 WordPress version 5.7.8 id
 ลองดู /wordpress/readme.html
 ข้างล่างๆมันจะมี base64 แปลกๆ
-15. xxamp ป้ะวะ หรือ wordpress วะ
-16.
+
+15. wordpress
+16. wordpress version 5.7.8
 17. 4 port
 18. 21,80,443,3306
 19.
