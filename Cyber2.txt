@@ -1,5 +1,5 @@
-15 XAMPP
-16 XAMPP for linux 8.1.12
+15 wordpress
+16 wordpress 5.7.8
 17 4 ports
 18 21 80 443 3306
 19
